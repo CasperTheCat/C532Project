@@ -2,8 +2,10 @@ import sys
 from os import walk
 import re
 from html.parser import HTMLParser
+from CritRole.Common import EDamageTypes
 
-EDamageTypes = ["Lightning", "Bleeding", "Poison", "Fire", "Falling", "Telekinetic", "Radiant", "Necrotic", "Psychic", "Ice", "Acid", "Thunder", "Physical"]
+#EDamageTypes = ["Lightning", "Bleeding", "Poison", "Fire", "Falling", "Telekinetic", "Radiant", "Necrotic", "Psychic", "Ice", "Acid", "Thunder", "Physical"]
+#EDamageTypes = ["Lightning", "Poison", "Fire", "Falling", "Radiant", "Necrotic", "Psychic", "Ice", "Acid", "Thunder", "Physical"]
 
 class TakenDamageParser(HTMLParser):
     def __init__(self, _x):
@@ -71,7 +73,7 @@ class TakenDamageParser(HTMLParser):
         elif x == "#00ff00":
             return "Acid"
         elif x == "#c27ba0":
-            return EDamageTypes[11]
+            return "Thunder"
         else:
             return "Physical"
 

@@ -1,13 +1,15 @@
 import pandas as pd
 from os import walk
+from CritRole.Common import EDamageTypes
+from CritRole.Common import validOrZero
 
-EDamageTypes = ["Lightning", "Bleeding", "Poison", "Fire", "Falling", "Telekinetic", "Radiant", "Necrotic", "Psychic", "Ice", "Acid", "Thunder", "Physical"]
+#EDamageTypes = ["Lightning", "Bleeding", "Poison", "Fire", "Falling", "Telekinetic", "Radiant", "Necrotic", "Psychic", "Ice", "Acid", "Thunder", "Physical"]
 
-def validOrZero(x):
-    if x == x:
-        return x
-    else:
-        return 0
+#def validOrZero(x):
+#    if x == x:
+#        return x
+#    else:
+#        return 0
 
 globalData = {}
 accmData = []
@@ -17,7 +19,7 @@ def process_file(root, x):
 #       return
     print("Processing file: " + str(x))
     eviFrame = pd.read_csv(root + x, index_col=0);
-    eviFrame = eviFrame.loc[:, EDamageTypes[0]:EDamageTypes[12]+"Instances"]
+    eviFrame = eviFrame.loc[:, EDamageTypes[0]:EDamageTypes[len(EDamageTypes) - 1]+"Instances"]
     if len(accmData) > 0:
         accmData[0] += eviFrame;
     else:

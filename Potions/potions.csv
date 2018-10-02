@@ -1,0 +1,110 @@
+Episode,Time,By,To,Potion,Effect
+2,2:41:00,Scanlan,Scanlan,Greater Healing,Scanlan heals unknown points
+5,0:57:01,Vax'ildan,Percy,Common Healing,"Percy heals 8 points, is conscious"
+5,0:57:04,Vex'ahlia,Scanlan,Common Healing,"Scanlan heals 5 points, is conscious"
+5,0:57:17,Grog,Grog,Greater Healing,Grog heals Unknown points
+5,1:02:42,Percy,Clarota,Greater Healing,Clarota heals 17 points
+11,4:08:09,Pike,Grog,Superior Healing,Grog heals 25 points
+11,4:26:24,Pike,Pike,Common Healing,Pike heals unknown points
+13,1:40:25,Grog,Grog,Superior Healing,Grog heals 24 points
+13,1:46:46,Scanlan,Pike,Superior Healing,Pike heals 30 points
+15,2:38:38,Vex'ahlia,Vex'ahlia,Greater Healing,Vex heals unknown points
+16,2:26:16,Vax'ildan,Vax'ildan,Healing,Vax heals unknown points
+16,2:26:40,Pike,Pike,Greater Healing,Pike heals unknown points
+17,0:16:15,Scanlan,Scanlan,Scrying,Scry in Sarenrae Temple
+19,0:33:39,Vex'ahlia,Vex'ahlia,Common Healing,Vex heals 4 points
+19,2:53:13,Grog,Scanlan,Superior Healing,Scanlan heals 19 points
+19,2:59:12,Scanlan,Scanlan,Superior Healing,Scanlan heals Unknown
+19,3:14:15,Scanlan,Scanlan,Greater Healing,Scanlan heals 11 points
+19,3:26:30,Scanlan,Lyra,Healing,"Lyra heals unknown points, is conscious"
+19,3:26:45,Grog,Percy,Healing,"Percy heals unknown points, is conscious"
+20,2:37:30,Tiberius,Tiberius,Frost Giant Strength,Strength Score increases to 23
+21,1:51:00,Tiberius,Keyleth,Common Healing,"Keyleth heals 7 points, is conscious"
+21,1:52:43,Vax'ildan,Vax'ildan,Healing,Vax heals unknown points
+21,1:52:53,Vax'ildan,Vax'ildan,Superior Healing,Vax heals unknown points
+21,2:03:48,Keyleth,Keyleth,Superior Healing,Keyleth heals 30 points
+23,0:38:20,Grog,Grog,Stone Giant Strength,Strength Score increases to 23
+23,2:46:56,Vax'ildan,Kynan,Healing,Kynan heals unknown points
+24,3:19:13,Vax'ildan,Vax'ildan,Spider Climb,"Can scale vertical surfaces, 
+climbing speed=walking speed"
+25,1:26:45,Vex'ahlia,Vex'ahlia,Superior Healing,Vex heals 28 points
+25,1:46:02,Vax'ildan,Vax'ildan,Greater Healing,Vax heals unknown points
+27,2:36:02,Scanlan,Scanlan,Scrying,Scry on Greyskull kitchen
+29,1:08:56,Vax'ildan,Percy,Greater Healing,"Percy heals 14 points, is conscious"
+31,p1. 0:35:47,Scanlan,Scanlan,Fire Breathing,1 hour or 3 uses of fire breath
+33,p1. 1:30:03,Vax'ildan,Cassandra,Common Healing,Cassandra heals 6 points
+34,1:24:18,Vex'ahlia,Vex'ahlia,Flying,One hour of flight
+34,3:55:52,Percy,Percy,Greater Healing,Percy heals unknown points
+34,4:05:52,Vex'ahlia,Vex'ahlia,Greater Healing,Vex heals unknown amount
+34,4:24:41,Vax'ildan,Vex'ahlia,Greater Healing,No effect
+35,p1. 0:21:28,Grog,Vex'ahlia,Common Healing,"Vex heals 8 points, is conscious"
+35,p1. 0:23:24,Vex'ahlia,Vex'ahlia,Greater Healing,Vex heals 11 points
+35,p1. 1:47:25,Pike,Pike,Common Healing,Pike heals 8 points
+40,0:54:06,Percy,Percy,Greater Healing,Percy heals unknown points
+44,4:19:39,Scanlan,Scanlan,Greater Healing,Scanlan heals unknown points
+44,4:25:24,Zahra,Vex'ahlia,Healing,No effect
+44,4:26:19,Vax'ildan,Vex'ahlia,Greater Healing,No effect
+50,0:40:20,Scanlan,Grog,Fire Giant Strength,Assist with Revivify
+52,1:16:40,Grog,Grog,Superior Healing,Grog heals 20 points
+54,3:02:34,Vax'ildan,Vax'ildan,Dimunition,Vax is Small
+54,3:46:45,Grog,Grog,Haste,Grog is Hasted
+55,2:58:35,Vax'ildan,Vex'ahlia,Greater Healing,Vex'ahlia heals unknown points
+56,3:15:47,Scanlan,Scanlan,Scrying,Compartment in Kaylie's sword
+63,0:25:04,Percy,Percy,Spider Climb,"Can scale vertical surfaces, 
+climbing speed=walking speed"
+63,3:14:02,Vex'ahlia,Vex'ahlia,Greater Healing,Vex heals 15 points
+63,3:35:50,Vex'ahlia,Vex'ahlia,Superior Healing,Vex heals 28 points
+68,2:20:33,Scanlan,Scanlan,Greater Healing,Scanlan heals unknown points
+68,2:41:12,Vex'ahlia,Vex'ahlia,Greater Healing,Vex heals unknown points
+68,3:11:13,Percy,Percy,Common Healing,Percy heals unknown points
+68,3:28:04,Percy,Percy,Greater Healing,Percy heals unknown points
+68,3:48:45,Percy,Percy,Common Healing,Percy heals unknown points
+71,4:29:06,Scanlan,Scanlan,Greater Healing,Scanlan heals 11 points
+71,4:38:16,Grog,Vax'ildan,Common Healing,"Vax heals 8 points, is conscious"
+71,4:38:16,Grog,Pike,Common Healing,"Pike heals 7 points, is conscious"
+75,1:33:51,Grog,Grog,Fox's Cunning,Advantage on Intelligence Checks
+76,1:29:07,Vax'ildan,Vax'ildan,Greater Healing,Vax'ildan heals 16 points
+76,2:30:26,Percy,Pike,Common Healing,"Pike heals 5 points, is conscious"
+79,0:14:06,Scanlan,Scanlan,Fire Resistance,Fire damage is halved
+79,0:14:06,Keyleth,Keyleth,Fire Resistance,Fire damage is halved
+79,0:14:06,Vex'ahlia,Vex'ahlia,Fire Resistance,Fire damage is halved
+79,0:14:06,Grog,Grog,Fire Resistance,Fire damage is halved
+79,0:14:06,Percy,Percy,Fire Resistance,Fire damage is halved
+79,0:46:44,Vax'ildan,Vax'ildan,Haste,Vax'ildan is hasted
+79,1:27:36,Vax'ildan,Vax'ildan,Invulnerability,Halves all damage
+79,2:58:26,Scanlan,Pike,Superior Healing,Pike heals 26 points
+79,3:00:55,Percy,Percy,Greater Healing,Percy heals 9 points
+80,0:22:30,Vex'ahlia,Vex'ahlia,Greater Healing,Vex'ahlia heals 10 points
+80,0:34:55,Scanlan,Scanlan,Common Healing,Scanlan heals 5 points
+80,1:09:38,Grog,Vex'ahlia,Superior Healing,"Vex'ahlia heals 32 points, is conscious"
+80,1:48:02,Vex'ahlia,Vex'ahlia,Superior Healing,Vex'ahlia heals 29 points
+80,2:21:14,Grog,Pike,Greater Healing,"Pike heals 15 points, is conscious"
+80,2:31:38,Pike,Pike,Greater Healing,Pike heals 19 points
+80,2:49:46,Grog,Pike,Greater Healing,"Pike heals 12 points, is conscious"
+80,3:01:55,Scanlan,Scanlan,Common Healing,Scanlan heals Unknown points
+80,3:03:54,Keyleth,Keyleth,Greater Healing,Keyleth heals 14 points
+81,1:01:42,Scanlan,Scanlan,Common Healing,Scanlan heals Unknown points
+83,2:04:26,Vex'ahlia,Vex'ahlia,Common Healing,Vex'ahlia heals 8 points
+86,3:20:26,Taryon,Taryon,Healing Draught,Dirt is cleared from Taryon's throat
+88,3:51:48,Grog,Keyleth,Greater Healing,"Keyleth heals 12 points, is conscious"
+88,4:13:32,Taryon,Taryon,Healing Draught,Taryon heals 35 points
+88,4:47:37,Grog,Grog,Greater Healing,Grog heals 16 points
+88,5:14:34,Grog,Grog,Common Healing,Grog heals 7 points
+88,5:16:05,Percy,Taryon,Common Healing,"Taryon heals 6 points, is conscious"
+93,2:16:58,Taryon,Taryon,Healing Draught,Taryon heals Unknown points
+93,3:38:16,Vax'ildan,Keyleth,Superior Healing,Keyleth heals 22 points
+96,3:32:40,Taryon,Taryon,Mind Reading,
+97,0:27:47,Keyleth,Keyleth,Healing Draught,Keyleth heals 37 points
+99,2:52:30,Taryon,Lionel,Swift Step Draught,Lionel's speed increased by 20
+102,4:03:23,Vex'ahlia,Vex'ahlia,Greater Healing,Vex'ahlia heals 17 points
+108,1:32:27,Vax'ildan,Vax'ildan,Healing,Vax'ildan heals unknown points
+109,0:38:29,Scanlan,Scanlan,Philter of Love,Scanlan fails temporarily in love with Percy
+110,0:35:18,Scanlan,Scanlan,Common Healing,Scanlan heals 6 points
+113,1:13:24,Arkhan,Gloomstalker,Greater Healing,Gloomstalker heals 9 points
+114,3:25:40,Vax'ildan,Keyleth,Superior Healing,Keyleth heals 33 points
+114,3:48:00,Percy,Percy,Superior Healing,Percy heals unknown points
+114,3:50:00,Scanlan,Scanlan,Superior Healing,Scanlan heals 33 points
+114,3:53:36,Pike,Pike,Superior Healing,Pike heals unknown points
+114,4:14:25,Vax'ildan,Vax'ildan,Greater Healing,Vax'ildan heals unknown points
+114,4:35:17,Vex'ahlia,Vex'ahlia,Superior Healing,Vex'ahlia heals unknown points
+114,5:20:56,Vex'ahlia,Vex'ahlia,Greater Healing,Vex'ahlia heals 15 points
