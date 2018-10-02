@@ -15,6 +15,7 @@ class TakenDamageParser(HTMLParser):
         self.damageMap = {};
         self.damageType = "Physical"
         self.readStyle = False;
+        self.registeredCharacters = []
         super(TakenDamageParser, self).__init__()
 
     def translate_to_damage_type(self, x):
@@ -75,6 +76,10 @@ class TakenDamageParser(HTMLParser):
             return "Physical"
 
     def handle_char(self, data, x):
+        # Handle Output to CSV
+        if x not in self.registeredCharacters:
+            self.registeredCharacters.append(x)
+
         if x == data and x not in self.characters:
             print(data + " found at r: " + str(self.row) + " c: " + str(self.column))
             self.characters[x] = [self.column, self.row, {}, {}, {}];
@@ -202,40 +207,43 @@ class TakenDamageParser(HTMLParser):
 
             outf.write(header + "\n")
             
-            for toon in self.characters:
+            for toon in self.registeredCharacters:
                 # Building string
                 lineout = toon + ","
 
-                # Damage Taken
-                for damageType in EDamageTypes:
-                    if damageType in self.characters[toon][2]:
-                        #print(toon + " " + damageType + str(self.characters[toon][2][damageType]))
-                        lineout += str(self.characters[toon][2][damageType])
-                    else:
-                        lineout += "0"
-                    
-                    lineout += ","
+                if toon not in self.characters:
+                  for i in EDamageTypes:
+                      lineout += "0,0,0,"  
 
-                for timesTaken in EDamageTypes:
-                    if timesTaken in self.characters[toon][3]:
-                        lineout += str(self.characters[toon][3][timesTaken])
-                    else:
-                        lineout += "0"
-                    
-                    lineout += ","
+                else:
+                    # Damage Taken
+                    for damageType in EDamageTypes:
+                        if damageType in self.characters[toon][2]:
+                            #print(toon + " " + damageType + str(self.characters[toon][2][damageType]))
+                            lineout += str(self.characters[toon][2][damageType])
+                        else:
+                            lineout += "0"
 
-                for dtypes in EDamageTypes:
-                    if dtypes in self.characters[toon][4]:
-                        lineout += "\""
-                        for instances in self.characters[toon][4][dtypes]:
-                            #print("inst: " + str(instances))
-                            lineout += str(instances) + ","
-                        lineout += "0\""
-                    else:
-                        lineout += "\"0\""
-                    
-                    lineout += ","  
-                    
+                        lineout += ","
+
+                    for timesTaken in EDamageTypes:
+                        if timesTaken in self.characters[toon][3]:
+                            lineout += str(self.characters[toon][3][timesTaken])
+                        else:
+                            lineout += "0"
+
+                        lineout += ","
+
+                    for dtypes in EDamageTypes:
+                        if dtypes in self.characters[toon][4]:
+                            lineout += "\""
+                            for instances in self.characters[toon][4][dtypes]:
+                                #print("inst: " + str(instances))
+                                lineout += str(instances) + ","
+                            lineout += "0\""
+                        else:
+                            lineout += "\"0\""
+                        lineout += ","  
                 outf.write(lineout + "\n")
 
         super(TakenDamageParser, self).close()
