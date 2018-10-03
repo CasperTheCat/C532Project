@@ -7,12 +7,16 @@ def validOrZero(x):
         return 0
 
 def EffectParser(x):
-    xs = x.split(' ')
+    print(x)
+
+    target = ""
+
+    if x == x:
+        xs = x.split(' ')
     
-    # target of the sentence
-    target = xs[0]
+        if xs[1] == "heals":
+        # target of the sentence
+            target = xs[2]
+        
 
-    # matches words?
-    if()
-
-    return "Targ", "e", "e"
+    return target, "heals", "e"
