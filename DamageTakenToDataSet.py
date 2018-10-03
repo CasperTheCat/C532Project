@@ -214,8 +214,10 @@ class TakenDamageParser(HTMLParser):
                 lineout = toon + ","
 
                 if toon not in self.characters:
-                  for i in EDamageTypes:
-                      lineout += "0,0,0,"  
+                    for i in EDamageTypes:
+                        lineout += "0,0,"
+                    for x in EDamageTypes:
+                        lineout += "\"[]\","
 
                 else:
                     # Damage Taken
@@ -239,12 +241,13 @@ class TakenDamageParser(HTMLParser):
                     for dtypes in EDamageTypes:
                         if dtypes in self.characters[toon][4]:
                             lineout += "\""
-                            for instances in self.characters[toon][4][dtypes]:
+                            lineout += str(self.characters[toon][4][dtypes])
+                            #for instances in self.characters[toon][4][dtypes]:
                                 #print("inst: " + str(instances))
-                                lineout += str(instances) + ","
-                            lineout += "0\""
+                             #   lineout += str(instances) + ","
+                            lineout += "\""
                         else:
-                            lineout += "\"0\""
+                            lineout += "\"[]\""
                         lineout += ","  
                 outf.write(lineout + "\n")
 

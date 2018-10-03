@@ -13,8 +13,9 @@ def sanitiseDate(x):
     #return re.sub('[^0-9]','', safex)
 
 def parseForTarget(x):
-    target, _, _ = EffectParser(x)
-    return target
+    #print(x)
+    func, targ, param = EffectParser(x["To"], x["Potion"], x["Effect"])
+    return [func, targ, param]
 
 potionFrame = pd.read_csv("Potions/potions.csv")
 
@@ -24,6 +25,8 @@ potionFrame["Time"] = potionFrame["Time"].map(sanitiseDate)
 # frame["Potion"] is for UI, the parser should handle that data
 
 # parse the Effect field
-potionFrame["Effect"] = potionFrame["Effect"].map(parseForTarget)
+#potionFrame["Effect"] = potionFrame["Effect"].map(parseForTarget)
+potionFrame["Effect"] = potionFrame.loc[:,"To":"Effect"].apply(parseForTarget, axis=1)
 
-print(potionFrame["Effect"][0:32])
+print(potionFrame[30:90])
+potionFrame.to_csv("dummy.csv")

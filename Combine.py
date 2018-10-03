@@ -19,6 +19,7 @@ def process_file(root, x):
 #       return
     print("Processing file: " + str(x))
     eviFrame = pd.read_csv(root + x, index_col=0);
+    print(eviFrame["PhysicalInstVals"][0:20])
     eviFrame = eviFrame.loc[:, EDamageTypes[0]:EDamageTypes[len(EDamageTypes) - 1]+"Instances"]
     if len(accmData) > 0:
         accmData[0] += eviFrame;

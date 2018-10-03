@@ -230,12 +230,10 @@ class TakenDamageParser(HTMLParser):
                 for dtypes in EDamageTypes:
                     if dtypes in self.characters[toon][4]:
                         lineout += "\""
-                        for instances in self.characters[toon][4][dtypes]:
-                            #print("inst: " + str(instances))
-                            lineout += str(instances) + ","
-                        lineout += "0\""
+                        lineout += str(self.characters[toon][4][dtypes])
+                        lineout += "\""
                     else:
-                        lineout += "\"0\""
+                        lineout += "\"[]\""
                     
                     lineout += ","  
 
