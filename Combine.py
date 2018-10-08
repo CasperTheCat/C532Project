@@ -1,5 +1,6 @@
 import pandas as pd
 from os import walk
+import matplotlib.pyplot as plt
 from CritRole.Common import EDamageTypes
 from CritRole.Common import validOrZero
 
@@ -52,3 +53,7 @@ for singleFile in damageTakens:
 #print(globalData)
 print(accmData)
 accmData[0].to_csv("comb.csv")
+
+accmData[0].plot()
+print(accmData[0].plot())
+
